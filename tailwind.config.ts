@@ -9,11 +9,11 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: 'var(--background)',
-        foreground: 'var(--foreground)',
-      },
+      colors: {},
     },
   },
   plugins: [daisyui],
+  daisyui: {
+    themes: ['light', 'dark', 'retro', 'nord', 'valentine', 'acid', 'autumn'],
+  },
 } satisfies Config;
