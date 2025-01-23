@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* Blue button with shine */
-.glass-button {
+.shine-button {
   position: relative;
   overflow: hidden;
   background-color: #2196f3; /* Adjust to your primary button color */
@@ -16,12 +16,12 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
 }
 
-.glass-button:hover {
+.shine-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12);
 }
 
-.glass-button::before {
+.shine-button::before {
   content: '';
   position: absolute;
   top: 0;
@@ -38,6 +38,6 @@
   z-index: 1;
 }
 
-.glass-button:hover::before {
+.shine-button:hover::before {
   left: 50%;
 }

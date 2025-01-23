@@ -1,4 +1,4 @@
-import { GlassButton } from '../components/glass-button';
+import { ShineButton } from '../components/shine-button';
 
 export default function Home() {
   return (
@@ -32,7 +32,7 @@ export default function Home() {
             />
           </div>
           <div className="flex justify-end">
-            <GlassButton />
+            <ShineButton />
           </div>
         </div>
       </div>
