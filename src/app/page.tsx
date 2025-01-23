@@ -1,5 +1,4 @@
-import Form from 'next/form';
-import { submitTicket } from './actions';
+import { GlassButton } from '../components/glass-button';
 
 export default function Home() {
   return (
@@ -10,7 +9,7 @@ export default function Home() {
             Submit an IT Ticket
           </h1>
         </div>
-        <Form className="mt-8 space-y-6" action={submitTicket}>
+        <div className="mt-8 space-y-6">
           <div className="form-control">
             <label className="label">
               <span className="label-text">Request Type</span>
@@ -33,9 +32,9 @@ export default function Home() {
             />
           </div>
           <div className="flex justify-end">
-            <button className="btn btn-primary">Submit</button>
+            <GlassButton />
           </div>
-        </Form>
+        </div>
       </div>
     </div>
   );
