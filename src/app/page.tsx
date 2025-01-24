@@ -1,4 +1,4 @@
-import { ShineButton } from '../components/shine-button';
+import StickFigureButton from '../components/stick-figure-button';
 
 export default function Home() {
   return (
@@ -32,7 +32,7 @@ export default function Home() {
             />
           </div>
           <div className="flex justify-end">
-            <ShineButton />
+            <StickFigureButton />
           </div>
         </div>
       </div>
