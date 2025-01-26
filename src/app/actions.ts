@@ -8,7 +8,7 @@ export async function submitTicket(formData: FormData) {
   try {
     console.log('Submitting ticket:', { requestType, description });
 
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    // await new Promise((resolve) => setTimeout(resolve, 1000));
 
     if (requestType && description) {
       return { success: true, message: 'Ticket submitted successfully!' };

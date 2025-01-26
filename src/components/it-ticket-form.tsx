@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { submitTicket } from '../app/actions';
 import SubmitButton from './submit-button';
+import { CircleXIcon, InfoIcon } from 'lucide-react';
 
 const ITTicketForm = () => {
   const [submissionResult, setSubmissionResult] = useState<{
@@ -23,11 +24,13 @@ const ITTicketForm = () => {
       <form className="mt-8 space-y-6" action={handleSubmit}>
         {submissionResult?.success && (
           <div className="alert alert-info shadow-lg">
+            <InfoIcon />
             {submissionResult.message}
           </div>
         )}
         {submissionResult?.success === false && (
           <div className="alert alert-error shadow-lg">
+            <CircleXIcon />
             {submissionResult.message}
           </div>
         )}
