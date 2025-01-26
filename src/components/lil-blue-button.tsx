@@ -53,7 +53,7 @@ const LilBlueButton = () => {
       </button>
       <div
         className="tooltip tooltip-open animate-pulse"
-        data-tip="Click me!"
+        data-tip="Click me to submit!"
       ></div>
     </>
   );
