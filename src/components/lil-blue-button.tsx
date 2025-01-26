@@ -28,7 +28,7 @@ const LilBlueButton = () => {
     setIsJumping(true);
     setTimeout(() => {
       setIsJumping(false);
-    }, 600);
+    }, 300);
 
     // picture animation
     for (let i = 1; i < animationImages.length; i++) {
@@ -46,14 +46,12 @@ const LilBlueButton = () => {
           height={100}
           src={animationImages[animationIndex]}
           alt="lil blue monster animation"
-          className={`transition-transform duration-300 ${
-            isJumping ? '-translate-y-6' : ''
-          }`}
+          className={`duration-300 ${isJumping ? '-translate-y-6' : ''}`}
         />
       </button>
       <div
         className="tooltip tooltip-open"
-        data-tip='Click me to submit!'
+        data-tip="Click me to submit!"
       ></div>
     </>
   );
