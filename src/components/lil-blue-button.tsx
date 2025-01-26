@@ -2,7 +2,6 @@
 
 import Image from 'next/image';
 import React, { useState } from 'react';
-import { submitTicket } from '../app/actions';
 
 const animationImages = [
   '/1.svg',
@@ -37,9 +36,6 @@ const LilBlueButton = () => {
         setAnimationIndex(i);
       }, i * 50);
     }
-
-    // POST to DB
-    await submitTicket();
   };
 
   return (
