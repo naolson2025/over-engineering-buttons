@@ -2,8 +2,7 @@
 
 import { useState } from 'react';
 import { submitTicket } from '../app/actions';
-// import SubmitButton from './submit-button';
-import LilBlueButton from './lil-blue-button';
+import SubmitButton from './submit-button';
 
 const ITTicketForm = () => {
   const [submissionResult, setSubmissionResult] = useState<{
@@ -62,8 +61,7 @@ const ITTicketForm = () => {
           />
         </div>
         <div className="flex justify-end">
-          <LilBlueButton />
-          {/* <SubmitButton /> */}
+          <SubmitButton />
         </div>
       </form>
     </div>
