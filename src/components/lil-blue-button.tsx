@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import React, { useState } from 'react';
+import { submitTicket } from '../app/actions';
 
 const animationImages = [
   '/1.svg',
@@ -23,7 +24,7 @@ const LilBlueButton = () => {
   const [animationIndex, setAnimationIndex] = useState(0);
   const [isJumping, setIsJumping] = useState(false);
 
-  const handleClick = () => {
+  const handleClick = async () => {
     // jump animation
     setIsJumping(true);
     setTimeout(() => {
@@ -38,6 +39,7 @@ const LilBlueButton = () => {
     }
 
     // POST to DB
+    await submitTicket();
   };
 
   return (
