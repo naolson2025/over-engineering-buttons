@@ -52,8 +52,8 @@ const LilBlueButton = () => {
         />
       </button>
       <div
-        className="tooltip tooltip-open animate-pulse"
-        data-tip="Click me to submit!"
+        className="tooltip tooltip-open"
+        data-tip='Click me to submit!'
       ></div>
     </>
   );
